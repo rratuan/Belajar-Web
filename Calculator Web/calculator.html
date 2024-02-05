@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        .container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Untuk mengatur posisi di tengah tanpa mempengaruhi ukuran */
+        }
+        .grid-container {
+            border: 1px solid;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            background-color: aqua;
+            padding: 10px;
+            gap: 10px;
+        }
+        .grid-item {
+            border: 1px solid;
+            padding: 10px;
+            text-align: center;
+        }
+        span {
+            border: 1px solid;
+            width: 100%;
+            grid-row: span 4;
+            grid-column: span 4; /* Membuat span memenuhi lebar kelima kolom pada grid */
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-container">
+            <span id="display"></span>
+            <div class="grid-item"><input type="button" value="C" onclick="myReset(this)"></div>
+            <div class="grid-item"><input type="button" value="+" onclick="myOperator(this)"></div>
+            <div class="grid-item"><input type="button" value="-" onclick="myOperator(this)"></div>
+            <div class="grid-item"><input type="button" value="x" onclick="myOperator(this)"></div>
+            <div class="grid-item"><input type="button" value="=" onclick="myCount(this)"></div>
+            <div class="grid-item"><input type="button" value="/" onclick="myOperator(this)"></div>
+            <div class="grid-item"><input type="button" value=1 onclick="myFunction(this)"></div>
+            <div class="grid-item"><input type="button" value=2 onclick="myFunction(this)"></div>
+            <div class="grid-item"><input type="button" value=3 onclick="myFunction(this)"></div>
+            <div class="grid-item"><input type="button" value=4 onclick="myFunction(this)"></div>
+            <div class="grid-item"><input type="button" value=5 onclick="myFunction(this)"></div>
+            <div class="grid-item"><input type="button" value=6 onclick="myFunction(this)"></div>
+            <div class="grid-item"><input type="button" value=7 onclick="myFunction(this)"></div>
+            <div class="grid-item"><input type="button" value=8 onclick="myFunction(this)"></div>
+            <div class="grid-item"><input type="button" value=9 onclick="myFunction(this)"></div>
+            <div class="grid-item"><input type="button" value=0 onclick="myFunction(this)"></div>
+        </div>
+    </div>
+
+    <script>
+        let a = '';
+        let b = '';
+        let operator = '';
+        let display = document.getElementById('display');
+
+        function updateDisplay(value) {
+            display.innerText = value;
+        }
+
+        function resetDisplay() {
+            display.innerText = '';
+        }
+
+        function myFunction(button) {
+            let value = button.value;
+            if (operator === '') {
+                a += value;
+                updateDisplay(a);
+            }else {
+                b += value;
+                updateDisplay(b);
+            }
+        }
+
+        function myOperator(button) {
+            let constant = display.innerText;
+            if (constant !== '') {
+                operator = button.value;
+                resetDisplay();
+            }
+        }
+
+        function myCount(button){
+            let hasil = 0;
+            if (a !== '' && b !== ''){
+                let c = parseInt(a);
+                let d = parseInt(b);
+                switch (operator) {
+                    case '+':
+                        hasil = c + d;
+                        break;
+                    case '-':
+                        hasil = c - d;
+                        break;
+                    case 'x':
+                        hasil = c * d;
+                        break;
+                    case '/':
+                        hasil = c / d;
+                        break;
+                    default:
+                        break;
+                }
+            }
+            return display.innerText = hasil
+        }
+
+    function myReset(button) {
+        a = '';
+        b = '';
+        operator = '';
+        display.innerText = '';
+    }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Pengetahuan Umum</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #bae8e8;">
+    <section>
+        <div class="container min-vh-100 selector-for-some-widget d-flex flex-column justify-content-center align-items-center">
+            <div class="row gap-2 rounded-5 p-3" style="background-color: #fef6e4;"> 
+            <!-- soal -->
+              <div class="col-lg d-flex align-items-center"  style="text-align: center;">
+                <div class="m-2 bg-primary">
+                    <p class="pt-2" id="question">
+                        Tokoh yang sangat terkenal dengan sumpah Palapa,berasal dari kerajaan...
+                    </p>
+                </div>
+              </div>
+              <!-- option -->
+              <div class="col-lg d-flex flex-column justify-content-center lh-lg rounded-5 text-light p-4" style="background-color: #272343;">
+                <div class="form-check d-flex flex-column" id="option">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="0">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Kutai
+                    </label>
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="1">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Sriwijaya
+                    </label>
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" value="2">
+                    <label class="form-check-label" for="flexRadioDefault3">
+                      Majapahit
+                    </label>
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" value="3">
+                    <label class="form-check-label" for="flexRadioDefault4">
+                      Singasari
+                    </label>
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5" value="4">
+                    <label class="form-check-label" for="flexRadioDefault5">
+                      Kediri
+                    </label>
+                </div>
+              </div>
+            </div>
+            <button id="btnNext" type="button" class="btn mt-3" style="background-color: #ffd803;">Next</button>
+          </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

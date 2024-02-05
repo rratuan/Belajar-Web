@@ -1,0 +1,62 @@
+[
+    {
+        "code": 1,
+        "question": "Tokoh di atas sangat terkenal dengan sumpah Palapa, berasal dari kerajaan …",
+        "option": ["Kutai", "Sriwijaya", "Majapahit", "Singasari", "Kediri"],
+        "answer": "Majapahit"
+    },
+    {
+        "code": 2,
+        "question": "Apa nama ibu kota negara philipina?",
+        "option": ["Kuala Lumpur", "Manila", "Bangkok", "Hanoi", "Singapura"],
+        "answer": "Manila"
+    },
+    {
+        "code": 3,
+        "question": "Negara Paman Sam adalah julukan untuk …",
+        "option": ["Amerika", "Eropa", "Australia", "Indonesia", "Jepang"],
+        "answer": "Amerika"
+    },
+    {
+        "code": 4,
+        "question": "Anda ikut berlomba. Anda menyalip orang di posisi nomor dua. Sekarang posisi anda nomor berapa?",
+        "option": ["Nomor satu", "Nomor dua", "Nomor tiga", "Nomor empat", "Nomor 5"],
+        "answer": "Nomor dua"
+    },
+    {
+        "code": 5,
+        "question": "Planet yang memiliki cincin adalah...",
+        "option": ["Jupiter", "Uranus", "Saturnus", "Neptunus", "Pluto"],
+        "answer": "Saturnus"
+    },
+    {
+        "code": 6,
+        "question": "sungai terpanjang di dunia adalah...",
+        "option": ["Gangga", "Nil", "Kapuas", "Amazon", "Mississipi"],
+        "answer": "Nil"
+    },
+    {
+        "code": 7,
+        "question": "Suku Aborigin berasal dari negara...",
+        "option": ["Australia", "Amerika", "Eropa", "India", "Thailand"],
+        "answer": "Australia"
+    },
+    {
+        "code": 8,
+        "question": "bukota Negara Korea Selatan...",
+        "option": ["Busan", "Seoul", "Pyongyang", "Sejong", "Tokyo"],
+        "answer": "Seoul"
+    },
+    {
+        "code": 9,
+        "question": "Pegunungan tertinggi di dunia adalah...",
+        "option": ["Everest", "Puncak Jaya", "Kini balu", "Puncak merapi", "Karakoram"],
+        "answer": "Everest"
+    },
+    {
+        "code": 10,  
+        "question": "Kepanjangan dari WHO adalah...",
+        "option": ["World High Organization", "Where Health Organization", " World Health Opposition", "World Health Organization", "Why Health Organization"],
+        "answer": "World Health Organization"
+    }
+]

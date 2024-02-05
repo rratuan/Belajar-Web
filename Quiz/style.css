@@ -1,0 +1,30 @@
+.selector-for-some-widget {
+    box-sizing: border-box;
+}
+
+/* Gaya radio button yang tersembunyi */
+input[type="radio"] {
+    display: none;
+}
+
+/* Gaya radio button saat dipilih */
+input[type="radio"]:checked + label::before {
+    background-color: #ff8906; /* Ubah warna latar belakang saat dipilih */
+}
+
+/* Gaya label radio button */
+label::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 5px;
+    vertical-align: middle;
+    background-color: #fff; /* Warna latar belakang radio button */
+}
+
+
+@media (max-width: 750px) {
+
+}

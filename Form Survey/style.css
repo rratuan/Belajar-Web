@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+h1 {
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 10px;
+    margin-bottom: auto;
+    color: white;
+}
+
+#description {
+    text-align: center;
+    color: white;
+}
+
+fieldset {
+    margin-left: 25%;
+    margin-right: 25%;
+    border-style: solid;
+    border-width: 0;
+    margin-top: 40px;
+    background-color: rgba(27, 27, 50, 0.8);;
+}
+
+body {
+    background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136,136, 206, 0.7)), url("https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg");
+    background-size: 200%;
+    font-family: 'Poppins';
+    color: white;
+}
+
+form {
+    padding-top: 8%;
+    padding-bottom: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+input {
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+input[type=text] {
+    width: 100%;
+    height: 25px;
+    border-radius: 0.3rem;
+}
+
+input[type=number] {
+    width: 100%;
+    height: 25px;
+    border-radius: 0.3rem;
+}
+
+input::placeholder {
+    padding: 5px;
+}
+
+select {
+    width: 100%;
+    height: 25px;
+    border-radius: 0.3rem;
+    color: gray;
+}
+
+input[type=radio] {
+    margin-bottom: 8px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+}
+
+textarea::placeholder {
+    padding-left: 5px;
+}
+
+button {
+    width: 100%;
+    height: 35px;
+    background-color: #37AF65;
+    border: 0;
+    color: white;
+    border-radius: 2px;
+    display: block;
+    margin-top: 10px;
+}
+
+input[type=email] {
+    width: 100%;
+    height: 25px;
+    border-radius: 0.3rem;
+}
